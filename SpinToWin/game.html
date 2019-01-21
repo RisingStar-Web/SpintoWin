@@ -1,0 +1,1145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta name="viewport" content="width=320, height=568">
+ <!-- <meta name="viewport" content="width=device-width" / -->
+ <!-- meta name="viewport" content="width=1049, height=1066" / -->
+ <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" / >
+ <meta name="format-detection" content="telephone=no">
+ <title>Petal</title>
+ <style>
+     
+ {
+ -webkit-user-select: none;
+ margin:0;
+ padding:0;
+ }
+ 
+ .scoreText {
+ position: absolute;
+ z-index: +4;
+ font-size: 100px;
+ left: 15px;
+ top: -200px;
+ color: white;
+ opacity: 1;
+ 
+ }
+ 
+ .scoreText.moveText
+ {
+ z-index: 3;
+ opacity: 1;
+ top: 901px;
+ opacity: 1;
+ -webkit-animation: rightThenLeft 2s ease;
+}
+ 
+ @-webkit-keyframes rightThenLeft {
+ 0% {
+ top: -100px;
+ 
+ }
+ 100% {
+ top: 701px;
+ }
+ 
+ }
+ 
+ .levelText {
+ position: absolute;
+ z-index: +4;
+ font-size: 300px;
+ left: 79px;
+ top: -400px;
+ color: white;
+ opacity: 1;
+ 
+ }
+ .levelText.moveLevel
+ {
+ z-index: 3;
+ opacity: 1;
+ top: 901px;
+ left: 79px;
+ 
+ font-size: 300px;
+ opacity: 1;
+ -webkit-animation: rightThenLeft 2s ease;
+ 
+ }
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+
+  /* ************ */
+  /* ************ */
+ .triangle1 {
+ 
+ position: absolute;
+ top: 221px;
+ left: 74px;
+ width: 0;
+ max-height: 0;
+ 
+
+ border-style: solid;
+
+ border-top: 0px solid transparent;
+ border-left: 87px solid transparent;
+ border-right: 87px solid transparent;
+ border-bottom: 119.10px solid #fc7c7e;
+
+opacity:1;
+ 
+ -webkit-transform-style: preserve-3d;
+ -webkit-transition-property: -webkit-transform;
+ -webkit-transition-duration: 0.55s;
+ 
+ }
+ .triangle1hidden {
+ 
+ position: absolute;
+ top: 221px;
+ left: 74px;
+ width: 0;
+ max-height: 0;
+ 
+
+ border-style: solid;
+
+ border-top: 0px solid transparent;
+ border-left: 87px solid transparent;
+ border-right: 87px solid transparent;
+ border-bottom: 119.10px solid #98bce0;
+ opacity:1;
+ 
+ visibility: hidden;
+ 
+ -webkit-transform-style: preserve-3d;
+ -webkit-transition-property: -webkit-transform;
+ -webkit-transition-duration: 0.55s;
+ }
+ .triangle1next {
+ 
+ position: absolute;
+ top: 221px;
+ left: 74px;
+ width: 0;
+ max-height: 0;
+ 
+
+ border-style: solid;
+
+ border-top: 0px solid transparent;
+ border-left: 87px solid transparent;
+ border-right: 87px solid transparent;
+ border-bottom: 119.10px solid #f9ad2a;
+
+ z-index: -1;
+ 
+ 
+ }
+ 
+ 
+ .triangle2 {
+ 
+ position: absolute;
+
+top: 221px;
+left: 74px;
+ width: 0;
+ max-height: 0;
+ border-style: solid;
+ border-top: 0px solid transparent;
+ border-left: 87px solid transparent;
+ border-right: 87px solid transparent;
+ border-bottom: 119.10px solid #83c9fd;
+
+ opacity:1;
+ 
+
+ 
+-webkit-transform-origin: 87px  1px;
+-webkit-transform: rotate(72deg);
+ 
+ -webkit-transform-style: preserve-3d;
+ -webkit-transition-property: -webkit-transform;
+ -webkit-transition-duration: 0.55s;
+ } 
+ .triangle2hidden {
+     
+     position: absolute;
+     
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #98bce0;
+     
+     opacity:1;
+     
+     
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(72deg);
+     
+     visibility : hidden;
+
+ }
+
+.triangle2next {
+ 
+ 
+ position: absolute;
+ 
+ top: 221px;
+ left: 74px;
+ width: 0;
+ max-height: 0;
+ border-style: solid;
+ border-top: 0px solid transparent;
+ border-left: 87px solid transparent;
+ border-right: 87px solid transparent;
+ border-bottom: 119.10px solid #fc7c7e;
+ 
+ opacity:1;
+ 
+ 
+ 
+ -webkit-transform-origin: 87px  1px;
+ -webkit-transform: rotate(72deg);
+ 
+
+ z-index: -1;
+ 
+ }
+ 
+ 
+ .triangle3 {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #f4e443;
+     
+     opacity:1;
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(144deg);
+     
+     
+     -webkit-transform-style: preserve-3d;
+     -webkit-transition-property: -webkit-transform;
+     -webkit-transition-duration: 0.55s;
+ }
+ .triangle3hidden {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #98bce0;
+     
+     opacity:1;
+     
+     
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(144deg);
+
+     
+     visibility: hidden;
+ }
+ 
+ .triangle3next {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid  #6090c0;
+     
+     opacity:1;
+     
+     
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(144deg);
+
+     
+     z-index: -1;
+ }
+ 
+ .triangle4 {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #b5df36;
+     opacity:1;
+     
+     
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(216deg);
+    
+     -webkit-transform-style: preserve-3d;
+     -webkit-transition-property: -webkit-transform;
+     -webkit-transition-duration: 0.55s;
+ }
+ .triangle4hidden {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #98bce0;
+     
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(216deg);
+     
+     
+     -webkit-transform-style: preserve-3d;
+     -webkit-transition-property: -webkit-transform;
+     -webkit-transition-duration: 0.55s;
+     
+     visibility: hidden;
+ }
+ .triangle4next {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #6090c0;
+     opacity:1;
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(216deg);
+     
+     
+     z-index: -1;
+ } 
+ 
+ 
+ .triangle5 {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #f9ad2a;
+     //
+     opacity:1;
+     
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(288deg);
+     
+     
+     -webkit-transform-style: preserve-3d;
+     -webkit-transition-property: -webkit-transform;
+     -webkit-transition-duration: 0.55s;
+ }
+ 
+ .triangle5hidden {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #98bce0;
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(288deg);
+     
+     visibility: hidden;
+     
+     
+     -webkit-transform-style: preserve-3d;
+     -webkit-transition-property: -webkit-transform;
+     -webkit-transition-duration: 0.55s;
+ }
+ 
+ 
+ .triangle5next {
+     
+     position: absolute;
+     top: 221px;
+     left: 74px;
+     width: 0;
+     max-height: 0;
+     border-style: solid;
+     
+     border-top: 0px solid transparent;
+     border-left: 87px solid transparent;
+     border-right: 87px solid transparent;
+     border-bottom: 119.10px solid #83c9fd;
+   
+     
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(288deg);
+     z-index: -1;
+     
+ }
+ 
+
+ /* ************ */
+  /* ************ */
+   /* ************ */
+    /* ************ */
+  
+
+ 
+ .triangle1.rollUp {
+ 
+ top: -150px;
+ -webkit-animation: toTop .7s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+
+
+ }
+ .triangle1.rollUp2 {
+ top: 60px;
+ -webkit-animation: toTop2 1.3s ease;
+
+ // -webkit-transform: rotate(360deg);
+ }
+ 
+ @-webkit-keyframes toTop {
+ 0% {
+ top: 60px;
+ 
+ }
+ 100% {
+ top: -150px;
+ }
+ 
+ }
+ @-webkit-keyframes toTop2 {
+ 0% {
+ top: -150px;
+ 
+ 
+ }
+ 100% {
+ top: 60px;
+ 
+ // -webkit-transform: rotate(360deg);
+ 
+
+ }
+ 
+ }
+
+ .triangle1next.rollUp {
+ 
+ top: -150px;
+ -webkit-animation: toTop .6s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ 
+ }
+ .triangle1next.rollUp2 {
+ top: 60px;
+ -webkit-animation: toTop2 1.3s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ }
+
+ 
+
+
+ 
+ 
+ 
+ 
+ .triangle2.rollRight {
+ 
+ left: 370px;
+ -webkit-animation: toRight .8s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ 
+
+ }
+ 
+ .triangle2.rollRight2 {
+ 
+ left: 160px;
+ 
+ // -webkit-transform: rotate(360deg);
+ -webkit-animation: toRight2 .8s ease;
+ }
+ 
+ @-webkit-keyframes toRight {
+ 0% {
+ left: 160px;
+ 
+ }
+ 100% {
+ left: 370px;
+ }
+ 
+ }
+ 
+ @-webkit-keyframes toRight2 {
+ 0% {
+ left: 370px; 
+ 
+ }
+ 100% {
+ left:160px;
+ 
+ // -webkit-transform: rotate(360deg);
+ 
+
+ }
+ 
+ }
+
+ 
+ .triangle2next.rollRight {
+ left: 370px;
+ 
+ -webkit-animation: toRight .4s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ }
+ .triangle2next.rollRight2 {
+ left: 160px;
+ 
+ -webkit-animation: toRight2 .4s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ }
+ 
+ 
+
+
+ .triangle3.rollDown {
+ 
+ top: 770px;
+ -webkit-animation: toDown .8s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ 
+
+ 
+ }
+ .triangle3.rollDown2 {
+ 
+ top: 200px;
+ -webkit-animation: toDown2 .8s ease;
+ 
+ 
+ // -webkit-transform: rotate(360deg);
+ }
+ @-webkit-keyframes toDown {
+ 0% {
+ top: 200px;
+ 
+ }
+ 100% {
+ top: 770px;
+ }
+ 
+ }
+ @-webkit-keyframes toDown2 {
+ 0% {
+ top: 700px;
+ 
+ }
+ 100% {
+ top: 200px;
+ 
+ // -webkit-transform: rotate(360deg);
+ 
+
+ }
+ 
+ }
+
+ .triangle3next.rollDown {
+ 
+ top: 770px;
+ -webkit-animation: toDown .8s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ 
+
+ }
+ .triangle3next.rollDown2 {
+ top: 200px;
+ -webkit-animation: toDown2 .8s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ 
+
+ }
+  
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ .triangle4.rollLeft {
+ 
+ left: -200px;
+ -webkit-animation: toLeft .8s ease;
+ }
+ .triangle4.rollLeft2 {
+ 
+ left: 20px;
+ -webkit-animation: toLeft2 .8s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ }
+ @-webkit-keyframes toLeft {
+ 0% {
+ left: 20px;
+
+ 
+ }
+ 100% {
+ left: -200px;
+ // -webkit-transform: rotate(360deg);
+ }
+ 
+ }
+ @-webkit-keyframes toLeft2 {
+ 0% {
+ 
+ left: -200px;
+ 
+ }
+ 100% {
+ left: 20px;
+ 
+ // -webkit-transform: rotate(360deg);
+ }
+ 
+ }
+
+ 
+ .triangle4next.rollLeft {
+ 
+ left: -200px;
+ -webkit-animation: toLeft .8s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ }
+ 
+ .triangle4next.rollLeft2 {
+ 
+ left: 20px;
+ -webkit-animation: toLeft2 .8s ease;
+ 
+ // -webkit-transform: rotate(360deg);
+ }
+ 
+ 
+ 
+ 
+ 
+ .triangle1.flipCard1
+ {
+ z-index: 2;
+-webkit-transform-origin: 87px  1px;
+ -webkit-transform: rotate(72deg);
+ }
+ 
+ 
+ .triangle1.flipCard2
+ {
+ z-index: 2;
+ -webkit-transform-origin: 87px  1px;
+ -webkit-transform: rotate(144deg);
+ 
+ }
+ .triangle1.flipCard3
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(212deg);
+ }
+ .triangle1.flipCard4
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(288deg);
+ }
+ .triangle2.flipCard5
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(144deg);
+ }
+ .triangle2.flipCard6
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(212deg);
+ 
+ }
+ .triangle2.flipCard7
+ {
+     
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(288deg);
+ }
+ .triangle2.flipCard8
+ {
+     
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(360deg);
+ }
+ .triangle3.flipCard9
+ {
+     
+     z-index: 2;
+     -webkit-transform-origin: 87px  1px;
+     -webkit-transform: rotate(216deg);
+ }
+ .triangle3.flipCard10
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(288deg);
+
+
+ }
+
+ .triangle3.flipCard11
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(360deg);
+ }
+ .triangle3.flipCard12
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(432deg);
+ }
+  .triangle4.flipCard13
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(288deg);
+ }
+ .triangle4.flipCard14
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(360deg);
+ }
+ .triangle4.flipCard15
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(432deg);
+ }
+ .triangle4.flipCard16
+ {
+     z-index: 2;
+     -webkit-transform-origin: 87px  0px;
+     -webkit-transform: rotate(504deg);
+ }
+ 
+  .triangle5.flipCard17
+ {
+ z-index: 2;
+ -webkit-transform-origin: 87px  0px;
+ -webkit-transform: rotate(360deg);
+ }
+ .triangle5.flipCard18
+ {
+ z-index: 2;
+ 
+ -webkit-transform-origin: 87px  0px;
+ -webkit-transform: rotate(432deg);
+ }
+ .triangle5.flipCard19
+ {
+ z-index: 2;
+ -webkit-transform-origin: 87px  0px;
+ -webkit-transform: rotate(504deg);
+ }
+ .triangle5.flipCard20
+ {
+ z-index: 2;
+ -webkit-transform-origin: 87px  0px;
+ -webkit-transform: rotate(576deg);
+ }
+ 
+ 
+
+
+
+
+
+ </style>
+ <script type="text/javascript">
+ 
+ 
+ function initListener() {
+ 
+ 
+ //alert('initListener');
+ document.addEventListener("webKitTransitionEnd", touchHandler, false);
+ document.addEventListener("webkitAnimationEnd", touchHandler, false);
+ 
+ 
+ 
+ }
+ function touchHandler(event) {
+ alert('webKitTransitionEnd');
+ window.location = "app://TransitionFinished";
+ 
+ }
+ 
+ function moveLevel(argument1) {
+ document.getElementById('levelText').innerHTML = argument1;
+ // document.getElementById('levelText').innerHTML = 'q';
+ 
+ document.getElementsByClassName('levelText')[0].classList.remove('moveLevel');
+ document.getElementsByClassName('levelText')[0].offsetWidth = document.getElementsByClassName('levelText')[0].offsetWidth;
+ 
+ setTimeout(function() { document.getElementsByClassName('levelText')[0].classList.add('moveLevel'); }, 1000);
+ }
+ function moveScore(argument2) {
+ document.getElementById('scoreText').innerHTML = argument2;
+ // document.getElementById('levelText').innerHTML = 'q';
+ 
+ document.getElementsByClassName('scoreText')[0].classList.remove('moveText');
+ document.getElementsByClassName('scoreText')[0].offsetWidth = document.getElementsByClassName('scoreText')[0].offsetWidth;
+ 
+ setTimeout(function() { document.getElementsByClassName('scoreText')[0].classList.add('moveText'); }, 1300);
+ }
+ function moveText() { 
+ 
+ document.getElementsByClassName('scoreText')[0].classList.remove('moveText');
+ document.getElementsByClassName('scoreText')[0].offsetWidth = document.getElementsByClassName('scoreText')[0].offsetWidth;
+ 
+ document.getElementsByClassName('scoreText')[0].classList.add('moveText');
+ }
+//  флип 1 -> 2
+ function flipCard1() {
+   document.getElementsByClassName('triangle1')[0].classList.add('flipCard1'); 
+ }
+ 
+ // флип 1 -> 3
+ function flipCard2() {
+   document.getElementsByClassName('triangle1')[0].classList.add('flipCard2');
+ }
+ 
+ 
+ // флип  1 -> 4
+ function flipCard3() {
+  document.getElementsByClassName('triangle1')[0].classList.add('flipCard3');
+}
+ 
+ 
+ // флип 1 -> 5
+ function flipCard4() {
+ document.getElementsByClassName('triangle1')[0].classList.add('flipCard4');
+}
+ 
+ // флип 2 -> 3
+ function flipCard5() {
+document.getElementsByClassName('triangle2')[0].classList.add('flipCard5');
+}
+ 
+ 
+ // флип  2 -> 4
+ function flipCard6() {
+ document.getElementsByClassName('triangle2')[0].classList.add('flipCard6');
+ }
+ 
+ 
+ // флип  2 -> 5
+ function flipCard7() {
+
+ document.getElementsByClassName('triangle2')[0].classList.add('flipCard7');
+ }
+ 
+ 
+ // -------------------------------------
+ 
+ // флип  2 -> 1
+ function flipCard8() {
+ 
+ document.getElementsByClassName('triangle2')[0].classList.add('flipCard8');
+  }
+ 
+ 
+ // флип 3 -> 4
+function flipCard9() {
+document.getElementsByClassName('triangle3')[0].classList.add('flipCard9');
+}
+
+ // флип  3 -> 5
+ function flipCard10() {
+ document.getElementsByClassName('triangle3')[0].classList.add('flipCard10');
+ }
+ 
+ // флип   3 -> 1
+ function flipCard11() {
+document.getElementsByClassName('triangle3')[0].classList.add('flipCard11');
+ }
+ 
+ // флип   3 -> 2
+function flipCard12() {
+document.getElementsByClassName('triangle3')[0].classList.add('flipCard12');
+ }
+ 
+ 
+ // флип 4 -> 5
+ function flipCard13() {
+     document.getElementsByClassName('triangle4')[0].classList.add('flipCard13');
+ }
+ 
+ // флип  4 -> 1
+ function flipCard14() {
+     document.getElementsByClassName('triangle4')[0].classList.add('flipCard14');
+ }
+ 
+ // флип   4 -> 2
+ function flipCard15() {
+     document.getElementsByClassName('triangle4')[0].classList.add('flipCard15');
+ }
+ 
+ // флип   4 -> 3
+ function flipCard16() {
+     document.getElementsByClassName('triangle4')[0].classList.add('flipCard16');
+ }
+ 
+ 
+ 
+ // флип 5 -> 1
+ function flipCard17() {
+     document.getElementsByClassName('triangle5')[0].classList.add('flipCard17');
+ }
+ 
+ // флип  5 -> 2
+ function flipCard18() {
+     document.getElementsByClassName('triangle5')[0].classList.add('flipCard18');
+ }
+ 
+ // флип   5 -> 3
+ function flipCard19() {
+     document.getElementsByClassName('triangle5')[0].classList.add('flipCard19');
+ }
+ 
+ // флип   5 -> 4
+ function flipCard20() {
+     document.getElementsByClassName('triangle5')[0].classList.add('flipCard20');
+ }
+
+
+function growDiv() {
+
+ 
+
+ setTimeout(function() { document.getElementsByClassName('triangle1')[0].classList.add('rollUp'); }, 50);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle1next')[0].classList.add('rollUp'); }, 400);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle2')[0].classList.add('rollRight'); }, 100);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle2next')[0].classList.add('rollRight'); }, 500);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle3')[0].classList.add('rollDown'); }, 200);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle3next')[0].classList.add('rollDown'); }, 600);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle4')[0].classList.add('rollLeft'); }, 300);
+ setTimeout(function() { document.getElementsByClassName('triangle4next')[0].classList.add('rollLeft'); }, 700);
+ }
+ 
+function newLevel2 () {
+ setTimeout(function() { document.getElementsByClassName('triangle1')[0].classList.add('rollUp2'); }, 1010);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle1next')[0].classList.add('rollUp2'); }, 1400);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle2')[0].classList.add('rollRight2'); }, 1100);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle2next')[0].classList.add('rollRight2'); }, 1500);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle3')[0].classList.add('rollDown2'); }, 1200);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle3next')[0].classList.add('rollDown2'); }, 1600);
+ 
+ setTimeout(function() { document.getElementsByClassName('triangle4')[0].classList.add('rollLeft2'); }, 1300);
+ setTimeout(function() { document.getElementsByClassName('triangle4next')[0].classList.add('rollLeft2'); }, 1700);
+ setTimeout(function() { document.getElementsByClassName('triangle5')[0].classList.add('rollLeft2'); }, 1400);
+ setTimeout(function() { document.getElementsByClassName('triangle5next')[0].classList.add('rollLeft2'); }, 1800);
+ 
+}
+ 
+function newLevel () {
+ 
+ document.getElementsByClassName('triangle1')[0].classList.remove('rollUp');
+ 
+ document.getElementsByClassName('triangle1')[0].offsetWidth = document.getElementsByClassName('triangle1')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle1')[0].classList.remove('rollUp2');
+ 
+ document.getElementsByClassName('triangle1')[0].offsetWidth = document.getElementsByClassName('triangle1')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle1')[0].offsetWidth = document.getElementsByClassName('triangle1')[0].offsetWidth;
+
+ 
+ document.getElementsByClassName('triangle1next')[0].classList.remove('rollUp');
+ document.getElementsByClassName('triangle1next')[0].offsetWidth = document.getElementsByClassName('triangle1next')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle1next')[0].classList.remove('rollUp2');
+ document.getElementsByClassName('triangle1next')[0].offsetWidth = document.getElementsByClassName('triangle1next')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle2')[0].classList.remove('rollRight');
+ document.getElementsByClassName('triangle2')[0].offsetWidth = document.getElementsByClassName('triangle2')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle2')[0].classList.remove('rollRight2');
+ document.getElementsByClassName('triangle2')[0].offsetWidth = document.getElementsByClassName('triangle2')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle2next')[0].classList.remove('rollRight');
+ document.getElementsByClassName('triangle2next')[0].offsetWidth = document.getElementsByClassName('triangle2next')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle2next')[0].classList.remove('rollRight2');
+ document.getElementsByClassName('triangle2next')[0].offsetWidth = document.getElementsByClassName('triangle2next')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle3')[0].classList.remove('rollDown');
+ document.getElementsByClassName('triangle3')[0].classList.remove('rollDown2');
+ document.getElementsByClassName('triangle3')[0].offsetWidth = document.getElementsByClassName('triangle3')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle3next')[0].classList.remove('rollDown');
+ document.getElementsByClassName('triangle3next')[0].classList.remove('rollDown2');
+ document.getElementsByClassName('triangle3next')[0].offsetWidth = document.getElementsByClassName('triangle3next')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle4')[0].classList.remove('rollLeft');
+ document.getElementsByClassName('triangle4')[0].offsetWidth = document.getElementsByClassName('triangle4')[0].offsetWidth;
+ 
+
+ document.getElementsByClassName('triangle4')[0].classList.remove('rollLeft2');
+ document.getElementsByClassName('triangle4')[0].offsetWidth = document.getElementsByClassName('triangle4')[0].offsetWidth;
+
+ document.getElementsByClassName('triangle4next')[0].classList.remove('rollLeft');
+ document.getElementsByClassName('triangle4next')[0].offsetWidth = document.getElementsByClassName('triangle4next')[0].offsetWidth;
+ document.getElementsByClassName('triangle4next')[0].classList.remove('rollLeft2');
+ document.getElementsByClassName('triangle4next')[0].offsetWidth = document.getElementsByClassName('triangle4next')[0].offsetWidth;
+ 
+ 
+ 
+ document.getElementsByClassName('triangle5')[0].classList.remove('rollLeft2');
+ document.getElementsByClassName('triangle5')[0].offsetWidth = document.getElementsByClassName('triangle5')[0].offsetWidth;
+ 
+ document.getElementsByClassName('triangle5next')[0].classList.remove('rollLeft');
+ document.getElementsByClassName('triangle5next')[0].offsetWidth = document.getElementsByClassName('triangle5next')[0].offsetWidth;
+ document.getElementsByClassName('triangle5next')[0].classList.remove('rollLeft2');
+ document.getElementsByClassName('triangle5next')[0].offsetWidth = document.getElementsByClassName('triangle5next')[0].offsetWidth;
+ 
+ 
+}
+ 
+ </script>
+ </head>
+ <body>
+ <!-- Colors: #fc7c7e красный 2, #b5df36 зеленый 1, #f4e443 желтый 1 , #83c9fd голубой 1, #f9ad2a оранжевый 1, #e3a8fd нежно сиреневый - 1,  голубой старый фон
+ #c8c8c8 /
+  bgcolor="#e3a8fd"-->
+ 
+ 
+ 
+ <div class="triangle1" id="triangle1"></div>
+ <div class="triangle1next" id="triangle1next"></div> 
+ <div class="triangle2" id="triangle2"></div>
+ <div class="triangle2next" id="triangle2next"></div> 
+<div class="triangle3" id="triangle3"></div>
+  <div class="triangle3next" id="triangle3next"></div>
+ <div class="triangle4" id="triangle4"></div>
+<div class="triangle4next" id="triangle4next"></div>
+ <div class="triangle5" id="triangle5"></div>
+ <div class="triangle5next" id="triangle5next"></div>
+ 
+ 
+
+
+<div class="triangle1hidden" id="triangle1hidden"></div>
+<div class="triangle2hidden" id="triangle2hidden"></div>
+<div class="triangle3hidden" id="triangle3hidden"></div>
+<div class="triangle4hidden" id="triangle4hidden"></div>
+<div class="triangle5hidden" id="triangle5hidden"></div>
+
+
+ 
+ <div class="scoreText" id="scoreText"></div>
+ <div class="levelText" id="levelText"></div>
+
+ 
+ </body>
+</html>

@@ -13,6 +13,15 @@
 		A5E6AB0921F431DD000BBC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E6AB0821F431DD000BBC4E /* Assets.xcassets */; };
 		A5E6AB0C21F431DD000BBC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E6AB0A21F431DD000BBC4E /* LaunchScreen.storyboard */; };
 		A5E6AB0F21F431DD000BBC4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6AB0E21F431DD000BBC4E /* main.m */; };
+		A5E6AB1A21F438EA000BBC4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6AB1621F438B6000BBC4E /* UIKit.framework */; };
+		A5E6AB1B21F438EF000BBC4E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6AB1821F438BF000BBC4E /* WebKit.framework */; };
+		A5E6AB1D21F439B2000BBC4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6AB1C21F439B2000BBC4E /* Foundation.framework */; };
+		A5E6AB1F21F43DEB000BBC4E /* game.html in Resources */ = {isa = PBXBuildFile; fileRef = A5E6AB1E21F43DEB000BBC4E /* game.html */; };
+		A5E6AB2321F466AD000BBC4E /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6AB2221F466AD000BBC4E /* GradientView.m */; };
+		A5E6AB2621F46FCA000BBC4E /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6AB2521F46FCA000BBC4E /* CustomButton.m */; };
+		A5E6AB2921F4718A000BBC4E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6AB2821F4718A000BBC4E /* MenuViewController.m */; };
+		A5E6AB2C21F47D4E000BBC4E /* RoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6AB2B21F47D4E000BBC4E /* RoundedView.m */; };
+		A5E6AB2F21F60FEA000BBC4E /* CustomTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6AB2E21F60FEA000BBC4E /* CustomTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,20 @@
 		A5E6AB0B21F431DD000BBC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5E6AB0D21F431DD000BBC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5E6AB0E21F431DD000BBC4E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5E6AB1621F438B6000BBC4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5E6AB1821F438BF000BBC4E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A5E6AB1C21F439B2000BBC4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5E6AB1E21F43DEB000BBC4E /* game.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = game.html; sourceTree = "<group>"; };
+		A5E6AB2121F466AD000BBC4E /* GradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		A5E6AB2221F466AD000BBC4E /* GradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		A5E6AB2421F46FCA000BBC4E /* CustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		A5E6AB2521F46FCA000BBC4E /* CustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		A5E6AB2721F4718A000BBC4E /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		A5E6AB2821F4718A000BBC4E /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		A5E6AB2A21F47D4E000BBC4E /* RoundedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundedView.h; sourceTree = "<group>"; };
+		A5E6AB2B21F47D4E000BBC4E /* RoundedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedView.m; sourceTree = "<group>"; };
+		A5E6AB2D21F60FEA000BBC4E /* CustomTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTextView.h; sourceTree = "<group>"; };
+		A5E6AB2E21F60FEA000BBC4E /* CustomTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E6AB1D21F439B2000BBC4E /* Foundation.framework in Frameworks */,
+				A5E6AB1B21F438EF000BBC4E /* WebKit.framework in Frameworks */,
+				A5E6AB1A21F438EA000BBC4E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +70,7 @@
 			children = (
 				A5E6AAFE21F431DB000BBC4E /* SpinToWin */,
 				A5E6AAFD21F431DB000BBC4E /* Products */,
+				A5E6AB1521F438B6000BBC4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +89,42 @@
 				A5E6AB0021F431DB000BBC4E /* AppDelegate.m */,
 				A5E6AB0221F431DB000BBC4E /* ViewController.h */,
 				A5E6AB0321F431DB000BBC4E /* ViewController.m */,
+				A5E6AB2721F4718A000BBC4E /* MenuViewController.h */,
+				A5E6AB2821F4718A000BBC4E /* MenuViewController.m */,
+				A5E6AB2121F466AD000BBC4E /* GradientView.h */,
+				A5E6AB2221F466AD000BBC4E /* GradientView.m */,
+				A5E6AB2421F46FCA000BBC4E /* CustomButton.h */,
+				A5E6AB2521F46FCA000BBC4E /* CustomButton.m */,
+				A5E6AB2A21F47D4E000BBC4E /* RoundedView.h */,
+				A5E6AB2B21F47D4E000BBC4E /* RoundedView.m */,
+				A5E6AB2D21F60FEA000BBC4E /* CustomTextView.h */,
+				A5E6AB2E21F60FEA000BBC4E /* CustomTextView.m */,
 				A5E6AB0521F431DB000BBC4E /* Main.storyboard */,
 				A5E6AB0821F431DD000BBC4E /* Assets.xcassets */,
 				A5E6AB0A21F431DD000BBC4E /* LaunchScreen.storyboard */,
 				A5E6AB0D21F431DD000BBC4E /* Info.plist */,
 				A5E6AB0E21F431DD000BBC4E /* main.m */,
+				A5E6AB2021F43DFA000BBC4E /* HTML */,
 			);
 			path = SpinToWin;
+			sourceTree = "<group>";
+		};
+		A5E6AB1521F438B6000BBC4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6AB1C21F439B2000BBC4E /* Foundation.framework */,
+				A5E6AB1821F438BF000BBC4E /* WebKit.framework */,
+				A5E6AB1621F438B6000BBC4E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5E6AB2021F43DFA000BBC4E /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				A5E6AB1E21F43DEB000BBC4E /* game.html */,
+			);
+			name = HTML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E6AB1F21F43DEB000BBC4E /* game.html in Resources */,
 				A5E6AB0C21F431DD000BBC4E /* LaunchScreen.storyboard in Resources */,
 				A5E6AB0921F431DD000BBC4E /* Assets.xcassets in Resources */,
 				A5E6AB0721F431DB000BBC4E /* Main.storyboard in Resources */,
@@ -142,7 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5E6AB0421F431DB000BBC4E /* ViewController.m in Sources */,
+				A5E6AB2921F4718A000BBC4E /* MenuViewController.m in Sources */,
+				A5E6AB2621F46FCA000BBC4E /* CustomButton.m in Sources */,
+				A5E6AB2C21F47D4E000BBC4E /* RoundedView.m in Sources */,
 				A5E6AB0F21F431DD000BBC4E /* main.m in Sources */,
+				A5E6AB2321F466AD000BBC4E /* GradientView.m in Sources */,
+				A5E6AB2F21F60FEA000BBC4E /* CustomTextView.m in Sources */,
 				A5E6AB0121F431DB000BBC4E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,7 +348,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UQFHVUUHB2;
 				INFOPLIST_FILE = SpinToWin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +366,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UQFHVUUHB2;
 				INFOPLIST_FILE = SpinToWin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
