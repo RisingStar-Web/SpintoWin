@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,10 +32,6 @@
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2019-01-20 at 09.47.04" translatesAutoresizingMaskIntoConstraints="NO" id="MAi-Yb-dht">
                                 <rect key="frame" x="0.0" y="50" width="320" height="398"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YM-oW-y6f">
-                                <rect key="frame" x="0.0" y="50" width="320" height="398"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5p-lV-JbG">
                                 <rect key="frame" x="139.5" y="328" width="41" height="41"/>
                                 <constraints>
@@ -104,14 +100,18 @@
                                 <rect key="frame" x="100" y="518" width="120" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Menu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.0" green="0.14433013759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="ObS-xd-Pv4" kind="presentation" id="xXd-Mu-df7"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YM-oW-y6f">
+                                <rect key="frame" x="0.0" y="50" width="320" height="398"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.056162720669999999" green="0.068897146820000005" blue="0.38088911800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5Ep-N0-EU8" firstAttribute="top" secondItem="wDB-uF-Usd" secondAttribute="bottom" constant="5" id="2ZO-oc-9xv"/>
                             <constraint firstItem="eqG-cl-gh1" firstAttribute="centerX" secondItem="rlz-Qd-4cq" secondAttribute="centerX" multiplier="0.6" id="4FL-B8-bWG"/>
@@ -168,32 +168,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yxq-yb-qwg" customClass="CustomTextView">
-                                <rect key="frame" x="20" y="40" width="280" height="338"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="20" y="40" width="280" height="318"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">HOW TO PLAY:
+                                <string key="text">HOW TO PLAY:
 Collect all the triangles of the same color to win.
 Clicking on any triangle will turn it clockwise.
 The color of the new triangle is random.
 Increasing the level of difficulty, adds the number of colors (one per level).
-As the grade increases, the color of the triangles with the symbol 🙈 will be hidden, and the triangles with the symbol 🛑 will be hidden and  not touchable.</mutableString>
+As the grade increases, the color of the triangles with the symbol 🙈 will be hidden, and the triangles with the symbol 🛑 will be hidden and  not touchable.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rad-5I-cWe" customClass="CustomButton">
-                                <rect key="frame" x="110" y="388" width="100" height="30"/>
+                                <rect key="frame" x="85" y="368" width="150" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8Xw-Xm-JyO"/>
-                                    <constraint firstAttribute="width" constant="100" id="cEh-ln-QVJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="8Xw-Xm-JyO"/>
+                                    <constraint firstAttribute="width" constant="150" id="cEh-ln-QVJ"/>
                                 </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Play"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.0" green="0.14433013759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="wPs-sn-xIR" kind="unwind" unwindAction="prepareForUnwind:" id="61s-F0-ItM"/>
                                 </connections>
                             </button>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIr-fz-ucZ" customClass="RoundedView">
-                                <rect key="frame" x="60" y="428" width="200" height="40"/>
+                                <rect key="frame" x="60" y="418" width="200" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghT-OR-NIn">
                                         <rect key="frame" x="10" y="0.0" width="50" height="40"/>
@@ -249,16 +251,17 @@ As the grade increases, the color of the triangles with the symbol 🙈 will be 
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idy-9F-2UX" customClass="RoundedView">
-                                <rect key="frame" x="120" y="478" width="80" height="40"/>
+                                <rect key="frame" x="120" y="468" width="80" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0t-mq-3Y6">
                                         <rect key="frame" x="10" y="9.5" width="60" height="21"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="V0t-mq-3Y6" firstAttribute="leading" secondItem="idy-9F-2UX" secondAttribute="leading" constant="10" id="mK9-Xl-iHr"/>
@@ -268,19 +271,21 @@ As the grade increases, the color of the triangles with the symbol 🙈 will be 
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Nh-ha-dHK" customClass="CustomButton">
-                                <rect key="frame" x="110" y="528" width="100" height="30"/>
+                                <rect key="frame" x="85" y="518" width="150" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="YbE-D4-SA7"/>
-                                    <constraint firstAttribute="height" constant="30" id="x89-6N-lIn"/>
+                                    <constraint firstAttribute="width" constant="150" id="YbE-D4-SA7"/>
+                                    <constraint firstAttribute="height" constant="40" id="x89-6N-lIn"/>
                                 </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Restart"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="0.0" green="0.14433013759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="restartGame:" destination="ObS-xd-Pv4" eventType="touchUpInside" id="YCK-Oj-CJD"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.056162720669999999" green="0.068897146820000005" blue="0.38088911800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RfO-0G-IrI" firstAttribute="bottom" secondItem="0Nh-ha-dHK" secondAttribute="bottom" constant="10" id="AE7-u9-1R1"/>
                             <constraint firstItem="Rad-5I-cWe" firstAttribute="centerX" secondItem="yxq-yb-qwg" secondAttribute="centerX" id="Edg-dj-3eZ"/>
@@ -310,6 +315,6 @@ As the grade increases, the color of the triangles with the symbol 🙈 will be 
         </scene>
     </scenes>
     <resources>
-        <image name="Screenshot 2019-01-20 at 09.47.04" width="320" height="395"/>
+        <image name="Screenshot 2019-01-20 at 09.47.04" width="640" height="790"/>
     </resources>
 </document>

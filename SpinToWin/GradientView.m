@@ -19,8 +19,8 @@ CAGradientLayer *gradient;
         gradient.frame = self.bounds;
         [gradient setStartPoint:CGPointMake(0, 0)];
         [gradient setEndPoint:CGPointMake(0, 1)];
-        [gradient setColors:@[ (id)[[UIColor colorWithRed:0.17 green:0.33 blue:0.39 alpha:1.0] CGColor],
-                               (id)[[UIColor colorWithRed:0.13 green:0.23 blue:0.26 alpha:1.0] CGColor],
+        [gradient setColors:@[ (id)[[UIColor colorWithRed:0.1 green:0.1 blue:0.89 alpha:1.0] CGColor],
+                               (id)[[UIColor colorWithRed:0.1 green:0.1 blue:0.5 alpha:1.0] CGColor],
                                (id)[[UIColor colorWithRed:0.06 green:0.13 blue:0.15 alpha:1.0] CGColor]]];
         [self.layer insertSublayer:gradient atIndex:0];
     }

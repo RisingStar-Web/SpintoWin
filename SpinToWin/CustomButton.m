@@ -14,10 +14,10 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        self.layer.cornerRadius = 10;
+        self.layer.cornerRadius = 20;
         self.layer.masksToBounds = true;
-        self.backgroundColor = UIColor.blackColor;
-        self.tintColor = UIColor.whiteColor;
+        self.backgroundColor = UIColor.whiteColor;
+        self.tintColor = UIColor.blackColor;
     }
     return self;
 }
